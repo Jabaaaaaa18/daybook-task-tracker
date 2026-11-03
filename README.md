@@ -4,8 +4,10 @@ Daybook is a local Windows desktop wrapper for the task-tracker prototype.
 
 ## Download and run
 
-- **Installer**: run `Daybook-Setup-1.0.0-x64.exe` from the `release` folder and follow the setup prompts.
-- **Portable**: run `Daybook-Portable-1.0.0-x64.exe` from the `release` folder without installing.
+Download the latest Windows app from the [GitHub Releases page](https://github.com/Jabaaaaaa18/daybook-task-tracker/releases/latest).
+
+- **Installer**: run `Daybook-Setup-1.0.0-x64.exe` and follow the setup prompts.
+- **Portable**: run `Daybook-Portable-1.0.0-x64.exe` without installing.
 
 The app stores requests and demo account roles locally on the device. It does not sync data or provide real authentication or authorization. The role chooser is for demonstration only. Do not enter confidential information.
 
