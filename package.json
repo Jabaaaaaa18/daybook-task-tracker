@@ -1,0 +1,57 @@
+{
+  "name": "daybook-task-tracker",
+  "version": "1.0.0",
+  "description": "A local role-based personal request tracker",
+  "author": "Daybook",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "local.daybook.tasktracker",
+    "productName": "Daybook",
+    "asar": true,
+    "files": [
+      "index.html",
+      "styles.css",
+      "app.js",
+      "main.js",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "artifactName": "Daybook-${version}-${arch}.${ext}",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "signAndEditExecutable": false,
+      "artifactName": "Daybook-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "Daybook-Setup-${version}-${arch}.${ext}"
+    },
+    "portable": {
+      "artifactName": "Daybook-Portable-${version}-${arch}.${ext}"
+    }
+  }
+}
